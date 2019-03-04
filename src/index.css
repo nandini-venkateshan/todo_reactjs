@@ -1,0 +1,166 @@
+*{
+    margin:0px;
+    box-sizing:border-box;
+}
+.main{
+    border:1px solid black;
+    margin:40px;
+    padding: 20px;
+    background-color:#78c4c4;
+    position:relative;
+
+}
+
+.todo{
+    margin:100px;
+}
+.plusBtn{
+    border-radius:48%;
+    font-size:30px;
+    background-color: red;
+    color:white;
+    position:fixed;
+    right:50px;
+    z-index:2;
+    bottom:120px;
+    cursor:pointer;
+}
+h1{
+    margin:40px 0px 10px 45px;
+    font-family:Roboto;
+}
+.content{
+    padding:30px;
+}
+
+ p{
+    font-size:20px;
+    font-weight:bold;
+}
+.main .done{
+margin-top:40px;
+}
+ .fa-check-circle-o{
+    font-size:30px;
+    color:  #5d6d7e;
+    position: absolute;
+    z-index:2;
+    right:10px;
+    bottom:10px;
+}
+.addButton{
+    height: 48px;
+    width: 48px;
+    background-color: #ff6666;
+    color: white;
+    font-size: 31.2px;
+   }
+   .wipBut{
+    background-color: #ec7063;
+    color: white;
+    border: transparent;
+   }
+   .doneBut{
+    background-color: #7d6608 ;
+    color: white;
+    border: transparent;
+   }
+@media only screen and (min-width:375px)
+{
+    .cards{
+        flex-wrap:wrap;
+        flex-direction:column; 
+        width:200px;
+    }
+    .cards div{
+        padding:5px 0px 100px 5px;
+        box-shadow:5px 5px 5px grey;
+        background-color:white;
+        margin-top:40px;
+        position:relative;
+        flex:auto;
+        
+    }
+    .promptBox{
+        display:flex;
+        flex-wrap:wrap;
+        border:1px solid  #cacfd2;
+       
+        background-color:white;
+        box-shadow:5px 5px 5px grey;
+        margin-bottom:20px;
+    }
+    .promptBox #textbox{
+        text-align:center;
+        padding:5px;
+        width:100px;
+        margin:20px 0px 10px 0px;
+        
+    }
+    .promptBox button{
+        padding:2px;
+        margin:10px;
+    }
+    .form{
+        position:fixed;
+        top:70px;
+        right:10px;
+    }
+
+}
+@media only screen and (min-width:1024px)
+{
+  .cards{
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction: row;
+     
+  }
+    .cards div{
+        /*padding:5px 0px 100px 5px;*/
+        box-shadow:5px 5px 5px grey;
+        background-color:white;
+        margin-top:10px;
+        position:relative;
+      padding:50px;
+      flex:auto;
+     
+    }
+
+    .promptBox{
+        border:1px solid  #cacfd2;
+      
+        padding:50px;
+        background-color:white;
+        box-shadow:5px 5px 5px grey;
+      margin-bottom:40px;
+        
+    }
+    .promptBox #textbox{
+        text-align:center;
+        padding:5px;
+        width:450px;
+        margin:auto;
+        
+    }
+    .form{
+        position:absolute;
+        top:70px;
+        right:100px;
+    }
+.promptBox button{
+    padding:2px;
+    margin:10px 0px 0px 120px;  
+}
+}
+
+
+.promptBox #cancel{
+    background-color: #eb984e;
+
+}
+.promptBox #add{
+    background-color:#82e0aa;
+    width:55px;
+    
+}
